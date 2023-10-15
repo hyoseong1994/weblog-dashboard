@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 프로젝트 실행 방법
 
-## Getting Started
+## 실행 환경
 
-First, run the development server:
+- nodejs: 18.7.0
+- npm: 8.15.0
+- yarn: 1.22.19
+- 웹 브라우저: chrome 117.0.5938.149
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 설치
+
+- yarn 설치
+
+```sh
+npm install -g yarn@1.22.19
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 패키지 설치
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 실행
 
-## Learn More
+`yarn start`실행 후, 웹 브라우저에서 localhost:3000로 실행 결과물을 확인
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 최종 스크린샷
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Screenshot](image/screenshot.png)
 
-## Deploy on Vercel
+# 사용한 기술과 선택한 이유
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+> recharts : 최근까지도 업데이트되면서도 문서화가 잘되어있습니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 프로젝트 구조
+
+- components : 반복되는 요소 분리하여 구성
+
+```bash
+├── public
+├── src
+│   ├── app
+│   ├── components
+│   ├── hooks
+│   ├── pages
+│   ├── types
+│   └── utils
+├── .eslintrc.json
+├── .gitignore
+├── next-env.d.ts
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.json
+├── weblog.csv
+└── yarn.lock
+```
